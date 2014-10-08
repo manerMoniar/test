@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
@@ -13,7 +14,7 @@ driver.close()
 """
 
 driver = webdriver.Firefox()
-driver.get("http://127.0.0.1:5000/appointments/")
-elem = driver.find_element_by_css_selector("#main > div.content.container > div > div:nth-child(1) > div > h3 > a")
-assert elem.text == "Past Meeting"
+driver.get("http://mawd1tic.com/maw/")
+elem = driver.find_element_by_css_selector("#content > div > div > div:nth-child(3) > div > div > div.span6.plain_text.alignment_left > h1")
+assert elem.text == "Nuestros Servicios"
 driver.close()
